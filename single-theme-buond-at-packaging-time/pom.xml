@@ -6,8 +6,8 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<parent>
-        <groupId>org.amicofragile.multiple-theme-demostration</groupId>
-        <artifactId>multiple-theme-demostration-parent</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+	        <groupId>org.amicofragile.multiple-theme-demostration</groupId>
+        	<artifactId>multiple-theme-demostration-parent</artifactId>
+	        <version>1.0.0-SNAPSHOT</version>
 	</parent>
 </project>
