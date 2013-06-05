@@ -21,13 +21,23 @@
 				</dependency>
 			</dependencies>
 		</profile>
+		<profile>
+			<id>green</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.amicofragile.multiple-theme-demostration</groupId>
+					<artifactId>green-theme</artifactId>
+					<version>1.0.0-SNAPSHOT</version>
+				</dependency>
+			</dependencies>
+		</profile>
 	</profiles>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.cargo</groupId>
 				<artifactId>cargo-maven2-plugin</artifactId>
-				<version>1.1.3</version>
+				<version>1.4.2</version>
 				<configuration>
 					<container>
 						<containerId>tomcat7x</containerId>
@@ -37,19 +47,19 @@
 						<properties>
 							<cargo.servlet.port>9090</cargo.servlet.port>
 							<cargo.tomcat.ajp.port>9009</cargo.tomcat.ajp.port>
-						</properties>
-						<deployables>
-							<deployable>
-								<groupId>org.amicofragile.multiple-theme-demostration</groupId>
-								<artifactId>single-theme-buond-at-packaging-time</artifactId>
-								<type>war</type>
-								<properties>
-									<context>single</context>
-								</properties>
-								<pingURL>http://localhost:9090/single/index.jsp</pingURL>
-							</deployable>
-						</deployables>
+						</properties>						
 					</configuration>
+					<deployables>
+						<deployable>
+							<groupId>org.amicofragile.multiple-theme-demostration</groupId>
+							<artifactId>single-theme-buond-at-packaging-time</artifactId>
+							<type>war</type>
+							<properties>
+								<context>single</context>
+							</properties>
+							<pingURL>http://localhost:9090/single/index.jsp</pingURL>
+						</deployable>
+					</deployables>
 				</configuration>
 			</plugin>
 		</plugins>
