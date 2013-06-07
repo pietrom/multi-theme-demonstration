@@ -31,6 +31,16 @@
 				</dependency>
 			</dependencies>
 		</profile>
+		<profile>
+			<id>blue</id>
+			<dependencies>
+				<dependency>
+					<groupId>org.amicofragile.multiple-theme-demostration</groupId>
+					<artifactId>blue-theme</artifactId>
+					<version>1.0.0-SNAPSHOT</version>
+				</dependency>
+			</dependencies>
+		</profile>
 	</profiles>
 	<build>
 		<plugins>
