@@ -2,4 +2,4 @@ target
 .metadata
 .settings
 .project
-.xml
+.classpath
