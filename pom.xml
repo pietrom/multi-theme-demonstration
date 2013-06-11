@@ -38,6 +38,7 @@
 
 	<modules>
 		<module>single-theme-buond-at-packaging-time</module>
+		<module>multi-theme-buond-at-packaging-time</module>
 		<module>red-theme</module>
 		<module>green-theme</module>
 		<module>blue-theme</module>
